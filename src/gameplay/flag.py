@@ -14,7 +14,7 @@ from pygamine import ImagePath
 from util.constants import *
 from gameplay.animation import scaled_row
 from gameplay.combat import find_nearest, ready_to_attack
-from gameplay.robot import DRONE_CLASSES
+from gameplay.robots import DRONE_CLASSES
 from gameplay.ui import draw_radial_progress
 
 

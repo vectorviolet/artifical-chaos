@@ -13,7 +13,7 @@ from pygamine import ImagePath
 
 from util.constants import *
 from gameplay.flag import Flag
-from gameplay.robot import DRONE_CLASSES
+from gameplay.robots import DRONE_CLASSES
 from gameplay.soldier import Soldier
 
 

@@ -160,7 +160,7 @@ separate) now push apart deterministically instead of staying stuck.
 ## Enemies: Drones
 
 Asset pack (`assets/images/robots/`). All five flying/walking/segmented
-types are spawned today via a shared `Drone` base class (`gameplay/robot.py`)
+types are spawned today via a shared `Drone` base class (`gameplay/robots.py`)
 parameterized by `DRONE_TYPES` (`util/constants.py`): idle → chase within
 `AGGRO_RADIUS` → melee or fire depending on range → destroyed (holds for
 `DESTROYED_DURATION_MS` before being removed, for types that have a
@@ -175,12 +175,12 @@ lookup. `Map.spawn_objects()` round-robins between them per flag.
 | Spider | 80×80 (5×5 @ 16px) | idle, walk, fire, melee, destroyed | **Implemented** — fast flanker: higher `speed` and a much shorter `fire_range` than Scarab so it closes to melee instead of lingering at range |
 | Hornet | 192×48, **actually 24×24 frames, 8 cols × 2 rows** (not 16px — confirmed by rendering the sheet with a grid overlay and inspecting it, since the info .txt doesn't give a frame size) | row 0 = neutral hover, row 1 = firing hover — **no destroyed frame** | **Implemented** — `melee_range: 0` so the melee branch never triggers (distance is never `<= 0`), i.e. ranged-only by construction. Removed immediately on death (no destroyed pose to hold). **[RESOLVED]**: now actually keeps its distance — `stand_off_range: 150` makes it back away while still firing once a target closes inside that, instead of holding ground like every other drone at fire range |
 | Wasp | 128×16, **confirmed 16×16 frames, 8 cols × 1 row** (single hover-loop animation, no separate firing pose) | one clip only — `idle`/`walking`/`fire`/`melee` in `DRONE_TYPES["Wasp"]["clip_rows"]` all point at row 0, so it looks identical in every status — **no destroyed frame** | **Implemented** — fast, fragile skirmisher; same no-melee/no-destroyed-hold treatment as Hornet |
-| Centipede | 128×288, **confirmed 16×16 frames, 8 cols × 18 rows** (not the originally-guessed 32×32 — confirmed by re-rendering at 16px and inspecting it) | rows 0-3: an armored head in 4 states (used for idle/walking/fire/melee); rows 8-16: plain round body-segment frames with no head armor, no destroyed frame | **Implemented** — heavy, slow siege unit. Head is a normal `Drone` (hp/combat/collision all inherited); the body is a chain of `CentipedeSegment` GameObjects (purely visual, no hp of their own) each holding `CENTIPEDE_SEGMENT_GAP` behind the one in front via a rigid follow constraint (`gameplay/robot.py`) — not a history-buffer/snake-path system, a simpler "each link snaps to hold distance from its leader" chain, confirmed to uncoil and trail correctly through a real chase in testing. No destroyed pose (removed immediately, segments included, same as Hornet/Wasp) |
+| Centipede | 128×288, **confirmed 16×16 frames, 8 cols × 18 rows** (not the originally-guessed 32×32 — confirmed by re-rendering at 16px and inspecting it) | rows 0-3: an armored head in 4 states (used for idle/walking/fire/melee); rows 8-16: plain round body-segment frames with no head armor, no destroyed frame | **Implemented** — heavy, slow siege unit. Head is a normal `Drone` (hp/combat/collision all inherited); the body is a chain of `CentipedeSegment` GameObjects (purely visual, no hp of their own) each holding `CENTIPEDE_SEGMENT_GAP` behind the one in front via a rigid follow constraint (`gameplay/robots.py`) — not a history-buffer/snake-path system, a simpler "each link snaps to hold distance from its leader" chain, confirmed to uncoil and trail correctly through a real chase in testing. No destroyed pose (removed immediately, segments included, same as Hornet/Wasp) |
 
 `Drone.get_target()` picks the nearest of the player or any in-army soldier
 within `AGGRO_RADIUS` (`gameplay/combat.find_nearest`) — so drones will
 peel off to chase a nearby soldier instead of the player if one's closer,
-which was verified in `test_robot.py`. `AGGRO_RADIUS` and
+which was verified in `test_robots.py`. `AGGRO_RADIUS` and
 `DESTROYED_DURATION_MS` are shared by all drone types; everything else
 (hp/speed/ranges/damage/cooldowns/sheet layout) is per-type in `DRONE_TYPES`.
 
@@ -373,7 +373,7 @@ frame size confirmed first (they bleed past a naive 16px grid slice).
    directly, win condition v1 is "defeat all drones", ranged combat is
    hitscan-as-nearest-in-range.
 2. ~~Drone AI: aggro radius → approach → attack → destroyed state, for
-   Scarab first~~ **done** (`gameplay/robot.py`).
+   Scarab first~~ **done** (`gameplay/robots.py`).
 3. ~~Combat resolution: damage, HP loss, death~~ **done**
    (`gameplay/combat.py`, shared by Scarab/Player/Soldier).
 4. ~~Win/lose condition~~ **done** ("all drones dead" / player HP 0, see
@@ -404,7 +404,7 @@ frame size confirmed first (they bleed past a naive 16px grid slice).
 16. ~~Hornet's stand-off/kiting behavior~~ **done** — see Enemies above.
 17. ~~Friendly-fire and story **[OPEN]**s~~ **done** — no friendly fire, by
     design (see Combat above, and its regression tests in `test_soldier.py`/
-    `test_robot.py`); ARGUS named and the Squad Leader's immunity given a
+    `test_robots.py`); ARGUS named and the Squad Leader's immunity given a
     reason (see Story above).
 18. ~~First drone-hp balance pass~~ **done** — every `DRONE_TYPES["hp"]`
     raised (Scarab 40→70, Spider 30→55, Hornet 45→70, Wasp 18→25, Centipede

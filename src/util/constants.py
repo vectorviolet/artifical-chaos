@@ -127,7 +127,7 @@ FLAG_SPAWN_RADIUS           = 80  # random offset from the flag's own position
 # and caps the spawner tighter than the default, ramping up to "Bastion",
 # which draws from the full roster including Centipede and lets more
 # spawn at once. Order matters -- index 0 is the nearest band. drone_pool
-# entries must be keys of gameplay.robot.DRONE_CLASSES.
+# entries must be keys of gameplay.robots.DRONE_CLASSES.
 FLAG_TIERS = (
     {
         "name": "Outpost",
@@ -246,7 +246,7 @@ FACING_DEADZONE = 4
 # capable of ~20-40 dps, see SOLDIER_CLASSES/PLAYER_FIRE_* below) converging
 # on one drone could otherwise melt even the toughest type in under a
 # second, which both made winning trivial and meant Centipede specifically
-# died before its segmented body (gameplay/robot.py's CentipedeSegment
+# died before its segmented body (gameplay/robots.py's CentipedeSegment
 # chain) ever visibly moved -- it only stretches out while the head is
 # still walking toward a target, and freezes the instant it's close enough
 # to fight, so a fight that's over almost immediately never shows it at
@@ -331,7 +331,7 @@ DRONE_TYPES = {
     },
     "Centipede": {
         # Heavy, slow siege unit (GDD role) -- the one drone type with a
-        # genuinely segmented body (gameplay/robot.py's CentipedeSegment),
+        # genuinely segmented body (gameplay/robots.py's CentipedeSegment),
         # so hp/speed lean tankier/slower than everything else here. Stats
         # below are for the head only; segments have no hp/combat of their
         # own. Sheet layout confirmed by rendering Centipede.png with a
@@ -360,7 +360,7 @@ DRONE_TYPES = {
     },
 }
 
-# Centipede's trailing body (gameplay/robot.py) -- each CentipedeSegment
+# Centipede's trailing body (gameplay/robots.py) -- each CentipedeSegment
 # holds CENTIPEDE_SEGMENT_GAP behind the one in front of it (a rigid
 # chain-link constraint solved fresh every frame, not a spring, so segments
 # hold a fixed distance instead of oscillating or drifting). One row per

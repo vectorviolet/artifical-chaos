@@ -4,7 +4,7 @@ import pygame
 import pytest
 from pygame.math import Vector2
 
-from gameplay.robot import Centipede, DRONE_CLASSES, Drone, Hornet, Scarab, Spider, Wasp
+from gameplay.robots import Centipede, DRONE_CLASSES, Drone, Hornet, Scarab, Spider, Wasp
 from util.constants import (
     AGGRO_RADIUS, CENTIPEDE_SEGMENT_GAP, CENTIPEDE_SEGMENT_ROWS, DESTROYED_DURATION_MS, DRONE_TYPES,
     FACING_DEADZONE,
@@ -497,7 +497,7 @@ def test_centipede_segments_spawn_already_spread_out_behind_the_head(game):
 
 
 def test_centipede_segment_follow_holds_the_gap_once_the_leader_moves_away(game):
-    from gameplay.robot import CentipedeSegment
+    from gameplay.robots import CentipedeSegment
 
     seg = CentipedeSegment(game, position=(0, 0), row=CENTIPEDE_SEGMENT_ROWS[0])
     seg.follow(Vector2(1000, 0))
@@ -506,7 +506,7 @@ def test_centipede_segment_follow_holds_the_gap_once_the_leader_moves_away(game)
 
 
 def test_centipede_segment_follow_does_nothing_within_the_gap(game):
-    from gameplay.robot import CentipedeSegment
+    from gameplay.robots import CentipedeSegment
 
     seg = CentipedeSegment(game, position=(0, 0), row=CENTIPEDE_SEGMENT_ROWS[0])
     leader = Vector2(CENTIPEDE_SEGMENT_GAP - 1, 0)

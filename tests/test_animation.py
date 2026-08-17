@@ -9,7 +9,7 @@ from gameplay.animation import add_directional_clips, scaled_row
 from util.constants import SCALE_FACTOR, SPRITE_SIZE
 
 # Scarab's sheet has row 0 (idle) and row 1 (walking) -- same one Scarab
-# itself loads in gameplay/robot.py, so this exercises the real asset.
+# itself loads in gameplay/robots.py, so this exercises the real asset.
 SCARAB_SHEET = ImagePath("Scarab", "robots")
 
 

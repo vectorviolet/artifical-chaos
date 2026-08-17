@@ -60,7 +60,7 @@ src/gameplay/effects.py   Cosmetic combat VFX (muzzle flash, hit spark/spatter, 
 src/gameplay/ui.py        Overhead progress/HP bars + radial fills (draw_bar, draw_radial_progress, draw_health_bar)
 src/gameplay/player.py    Player (squad leader) + Footprint; fights with a sidearm
 src/gameplay/soldier.py   Recruitable soldiers that follow + auto-fight nearby drones
-src/gameplay/robot.py     Drone base class + Scarab/Spider/Hornet/Wasp subclasses (aggro/chase/attack AI)
+src/gameplay/robots.py    Drone base class + Scarab/Spider/Hornet/Wasp subclasses (aggro/chase/attack AI)
 src/gameplay/flag.py      Objective flags -- capturable while held and uncontested by a drone
 src/util/constants.py     Constants (FPS, render size, sprite sizes, durations, ranks, combat tuning)
 src/pygamine/             Shared engine (git submodule)

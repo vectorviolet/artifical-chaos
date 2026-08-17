@@ -38,7 +38,7 @@ pygame.init()
 pygame.display.set_mode((1, 1))
 
 from gameplay.player import Player
-from gameplay.robot import DRONE_CLASSES
+from gameplay.robots import DRONE_CLASSES
 from gameplay.soldier import Soldier
 from util.constants import DRONE_TYPES, SOLDIER_CLASSES
 
