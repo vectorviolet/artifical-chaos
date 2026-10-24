@@ -36,8 +36,8 @@ class Game(Application):
             skip_completely=True,
         )
 
-        self._end_font = pygame.font.SysFont("Arial", 96, bold=True)
-        self._restart_font = pygame.font.SysFont("Arial", 36)
+        self._end_font = pygame.font.Font(FONT_BOLD, 96)
+        self._restart_font = pygame.font.Font(FONT_REGULAR, 36)
         self._any_key_icon = load_image(ImagePath("keyboard_any_outline", "input_prompts"), size=(96, 96))
         self._escape_icon = load_image(ImagePath("keyboard_escape_outline", "input_prompts"), size=(32, 32))
         # Generic mouse (no button highlighted) rather than mouse_left --

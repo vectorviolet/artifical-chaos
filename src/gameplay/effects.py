@@ -262,7 +262,7 @@ class FloatingText(GameObject):
     def __init__(self, game, position, text: str, color, offset_index: int = 0) -> None:
         super().__init__(name="floating_text")
         if FloatingText._font is None:
-            FloatingText._font = pygame.font.SysFont("Arial", FLOATING_TEXT_FONT_SIZE, bold=True)
+            FloatingText._font = pygame.font.Font(FONT_BOLD, FLOATING_TEXT_FONT_SIZE)
 
         self.start = Vector2(position) + Vector2(offset_index * FLOATING_TEXT_X_SPACING, 0)
         self.end = self.start - Vector2(0, FLOATING_TEXT_RISE_DISTANCE)

@@ -88,7 +88,7 @@ class Player(GameObject):
         self.rank_sheet = SpriteSheet.from_path(ImagePath("squad-insignia", "ui"))
         self.rank_image = self.get_rank_image()
 
-        self._squad_stance_font = pygame.font.SysFont("Arial", SQUAD_STANCE_HUD_FONT_SIZE, bold=True)
+        self._squad_stance_font = pygame.font.Font(FONT_BOLD, SQUAD_STANCE_HUD_FONT_SIZE)
 
         game.all_sprites.append(self)
 

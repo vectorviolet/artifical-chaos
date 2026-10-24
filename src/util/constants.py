@@ -48,6 +48,14 @@ MAX_DELTA_TIME = 1 / 20
 MUZZLE_OFFSET_X = 24
 MUZZLE_OFFSET_Y = -6
 
+# UI fonts, bundled in assets/fonts/ (SIL OFL, licenses alongside) so text
+# looks the same on every OS. PT Sans Narrow stands in for the Arial Narrow
+# that pygame's SysFont("Arial") actually resolved to on Windows -- which
+# the HUD/tutorial/end-screen sizes were tuned against -- and for whatever
+# else it would resolve to elsewhere (Linux/macOS have no Arial at all).
+FONT_REGULAR = "assets/fonts/PTSansNarrow-Regular.ttf"
+FONT_BOLD = "assets/fonts/PTSansNarrow-Bold.ttf"
+
 # In-game controls tutorial (gameplay/tutorial.py) -- a linear "press this
 # key" HUD overlay shown at the start of a run (MOVE -> FIRE -> SQUAD
 # STANCE), not persisted across runs (no save/load exists yet, see

@@ -4,7 +4,7 @@ from pygamine import load_image
 from pygamine import ImagePath
 
 from util.constants import (
-    TUTORIAL_FONT_SIZE, TUTORIAL_GROUP_GAP, TUTORIAL_ICON_GAP, TUTORIAL_ICON_SIZE,
+    FONT_BOLD, TUTORIAL_FONT_SIZE, TUTORIAL_GROUP_GAP, TUTORIAL_ICON_GAP, TUTORIAL_ICON_SIZE,
     TUTORIAL_PANEL_ALPHA, TUTORIAL_PANEL_PADDING, TUTORIAL_TOP_MARGIN,
 )
 
@@ -84,7 +84,7 @@ class Tutorial:
     def __init__(self, game) -> None:
         self.game = game
         self.step_index = 0
-        self._font = pygame.font.SysFont("Arial", TUTORIAL_FONT_SIZE, bold=True)
+        self._font = pygame.font.Font(FONT_BOLD, TUTORIAL_FONT_SIZE)
 
     @property
     def done(self) -> bool:
