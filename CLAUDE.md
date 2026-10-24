@@ -161,7 +161,7 @@ Asset folders/files that exist but aren't wired into any code yet: `assets/image
 
 ### pygamine — shared submodule
 
-`src/pygamine/` is a git submodule (`https://github.com/umutcanekinci/pygamine.git`), shared with chokepoint/highrise/hunted/standoff. Bump it deliberately and re-run the full test suite + smoke test after — an earlier bump was 42 commits stale and broke on Python 3.12 (a `Transform` self-referencing type hint needed `from __future__ import annotations`, only worked locally by accident because that machine's Python 3.14 defers annotation evaluation by default).
+`src/pygamine/` is a git submodule (`https://github.com/vectorviolet/pygamine.git`), shared with chokepoint/highrise/hunted/standoff. Bump it deliberately and re-run the full test suite + smoke test after — an earlier bump was 42 commits stale and broke on Python 3.12 (a `Transform` self-referencing type hint needed `from __future__ import annotations`, only worked locally by accident because that machine's Python 3.14 defers annotation evaluation by default).
 
 ### Persistence
 

@@ -6,7 +6,7 @@ Artificial Chaos is a 2D top-down game prototype built with [pygame](https://www
 
 ![Gameplay](docs/preview.gif)
 
-> **⚠️ Status: unfinished prototype**, not in active development. Core combat, a first pass of effects, and flag-capture win/lose now work (see Gameplay below); most of the effects/projectiles sheets, 2 of 6 soldier classes, and 1 of 5 drone types (Centipede) are still unimplemented. It has been migrated onto my shared [`pygamine`](https://github.com/umutcanekinci/pygamine) engine (vendored as a git submodule, like [chokepoint](https://github.com/umutcanekinci/chokepoint)): the game loop now extends `pygamine.Application`, entities are `GameObject`s with `Transform`/`SpriteRenderer2D`/`Animator` components rendered through `pygamine.Camera`, and asset/spritesheet handling uses `pygamine` instead of project-local copies.
+> **⚠️ Status: unfinished prototype**, not in active development. Core combat, a first pass of effects, and flag-capture win/lose now work (see Gameplay below); most of the effects/projectiles sheets, 2 of 6 soldier classes, and 1 of 5 drone types (Centipede) are still unimplemented. It has been migrated onto my shared [`pygamine`](https://github.com/vectorviolet/pygamine) engine (vendored as a git submodule, like [chokepoint](https://github.com/umutcanekinci/chokepoint)): the game loop now extends `pygamine.Application`, entities are `GameObject`s with `Transform`/`SpriteRenderer2D`/`Animator` components rendered through `pygamine.Camera`, and asset/spritesheet handling uses `pygamine` instead of project-local copies.
 
 ## Gameplay
 
