@@ -5,7 +5,7 @@ from pygamine import Application
 from pygamine import GameObjectList
 from pygamine import load_image
 from pygamine import ImagePath
-from pygamine import SplashScreen
+from pygamine import SplashScreen, ImageMedia
 from pygamine import SpatialGrid
 
 from util.constants import *
@@ -30,8 +30,10 @@ class Game(Application):
         self.mouse.set_cursor_visible(False)
         self.cursor = load_image(ImagePath("mouse-pointer", "ui"))
 
-        self.splash = SplashScreen([ImagePath("pygame_logo", "branding"), ImagePath("title", "branding")],
-                                   fade_ms=SPLASH_FADE_MS, hold_ms=SPLASH_HOLD_MS)
+        self.splash = SplashScreen([
+            ImageMedia(ImagePath("pygame_logo", "branding"), fade_ms=SPLASH_FADE_MS, hold_ms=SPLASH_HOLD_MS),
+            ImageMedia(ImagePath("title", "branding"), fade_ms=SPLASH_FADE_MS, hold_ms=SPLASH_HOLD_MS),
+        ])
 
         self._end_font = pygame.font.SysFont("Arial", 96, bold=True)
         self._restart_font = pygame.font.SysFont("Arial", 36)
