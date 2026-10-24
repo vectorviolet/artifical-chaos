@@ -1,12 +1,12 @@
 # Artificial Chaos
 
-![Coverage](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/umutcanekinci/artifical-chaos/main/.github/badges/coverage.json)
+![Coverage](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/vectorviolet/artifical-chaos/main/.github/badges/coverage.json)
 
 Artificial Chaos is a 2D top-down game prototype built with [pygame](https://www.pygame.org/). You control the last human still in control of their own mind, freeing mind-controlled soldiers into a following squad while fighting off autonomous combat drones — see [GDD.md](GDD.md) for the full story/design doc.
 
 ![Gameplay](docs/preview.gif)
 
-> **⚠️ Status: unfinished prototype**, not in active development. Core combat, a first pass of effects, and flag-capture win/lose now work (see Gameplay below); most of the effects/projectiles sheets, 2 of 6 soldier classes, and 1 of 5 drone types (Centipede) are still unimplemented. It has been migrated onto my shared [`pygamine`](https://github.com/vectorviolet/pygamine) engine (vendored as a git submodule, like [chokepoint](https://github.com/umutcanekinci/chokepoint)): the game loop now extends `pygamine.Application`, entities are `GameObject`s with `Transform`/`SpriteRenderer2D`/`Animator` components rendered through `pygamine.Camera`, and asset/spritesheet handling uses `pygamine` instead of project-local copies.
+> **⚠️ Status: unfinished prototype**, not in active development. Core combat, a first pass of effects, and flag-capture win/lose now work (see Gameplay below); most of the effects/projectiles sheets, 2 of 6 soldier classes, and 1 of 5 drone types (Centipede) are still unimplemented. It has been migrated onto my shared [`pygamine`](https://github.com/vectorviolet/pygamine) engine (vendored as a git submodule, like [chokepoint](https://github.com/vectorviolet/chokepoint)): the game loop now extends `pygamine.Application`, entities are `GameObject`s with `Transform`/`SpriteRenderer2D`/`Animator` components rendered through `pygamine.Camera`, and asset/spritesheet handling uses `pygamine` instead of project-local copies.
 
 ## Gameplay
 
@@ -38,7 +38,7 @@ Move the squad leader around the map. When you get close to a soldier, they join
 ## Running
 
 ```bash
-git clone --recurse-submodules https://github.com/umutcanekinci/artifical-chaos.git
+git clone --recurse-submodules https://github.com/vectorviolet/artifical-chaos.git
 cd artifical-chaos
 pip install pygame pytmx
 python __main__.py

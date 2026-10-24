@@ -7,7 +7,7 @@ See [GDD.md](GDD.md) for story/design intent — this file is architecture only.
 ## Running the Game
 
 ```bash
-git clone --recurse-submodules https://github.com/umutcanekinci/artifical-chaos.git
+git clone --recurse-submodules https://github.com/vectorviolet/artifical-chaos.git
 cd artifical-chaos
 uv sync
 uv run python __main__.py

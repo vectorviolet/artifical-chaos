@@ -1,6 +1,6 @@
 <h1>Artificial Chaos</h1>
 <p>Artificial Chaos is a 2D top-down squad-combat game prototype built with <a target="_blank" href="https://github.com/pygame-community/pygame-ce">pygame-ce</a>. A rogue AI called <strong>ARGUS</strong> has seized human infrastructure and, through it, human minds &mdash; soldiers across the map are still alive, still human, but dormant, standing idle until something snaps them out of it. You're the <strong>Squad Leader</strong>, the last person still in control of your own mind (an off-grid forward position kept you outside ARGUS's mass suppression signal), and your commlink still runs pre-ARGUS firmware &mdash; which is why simply walking up to a dormant soldier is enough to free them.</p>
-<p><img style="max-width: 100%;" alt="Gameplay Preview" src="https://raw.githubusercontent.com/umutcanekinci/artifical-chaos/main/docs/preview.gif"></p>
+<p><img style="max-width: 100%;" alt="Gameplay Preview" src="https://raw.githubusercontent.com/vectorviolet/artifical-chaos/main/docs/preview.gif"></p>
 <h2>Gameplay</h2>
 <p>Move the Squad Leader around the map. Get close to a dormant soldier and they join your army, following you while spreading out to avoid crowding each other. Hold the left mouse button to fire your sidearm at the nearest of ARGUS's combat drones in range &mdash; ranged attacks flash a muzzle, a tracer flies to the target, and a spark/blood-spatter hits home; drones burst into an explosion on death. Recruited soldiers auto-fight nearby drones too, entirely on their own &mdash; there's no per-unit targeting, every soldier picks its own nearest threat. Every objective flag spawns with a guardian drone and keeps reinforcing itself with more while it stays uncaptured; clear the area, then hold the flag (with the Squad Leader or a recruited soldier, uncontested by a nearby drone) until it locks in. Capture every flag on the map to win; the Squad Leader dying ends the run. Capturing a flag also ranks you up, buffing your HP, speed, fire rate, or damage.</p>
 <p>Two mechanics turn squad combat into an active decision instead of something that just happens in the background: your soldiers only actually land a hit while <em>you've</em> stopped moving (they still aim the instant a target's in range, they just don't connect until you hold still) &mdash; and Tab toggles the whole squad between <strong>Engage</strong> (spread out and fight independently) and <strong>Guard</strong> (a tight escort formation that ignores threats far from you). Neither ever lets you pick who a soldier shoots at &mdash; that's a deliberate pillar of the game, not a missing feature.</p>
@@ -72,7 +72,7 @@
   </tbody>
 </table>
 <h2>Status</h2>
-<p>Prototype, fully playable start to finish: all 6 soldier classes, all 5 drone types, flag-capture win/lose, rank-up bonuses, and a first pass of combat effects and balance are in. Built on my shared <a target="_blank" href="https://github.com/vectorviolet/pygamine">pygamine</a> engine (vendored as a git submodule, like <a target="_blank" href="https://github.com/umutcanekinci/chokepoint">chokepoint</a>).</p>
+<p>Prototype, fully playable start to finish: all 6 soldier classes, all 5 drone types, flag-capture win/lose, rank-up bonuses, and a first pass of combat effects and balance are in. Built on my shared <a target="_blank" href="https://github.com/vectorviolet/pygamine">pygamine</a> engine (vendored as a git submodule, like <a target="_blank" href="https://github.com/vectorviolet/chokepoint">chokepoint</a>).</p>
 <h2>Requirements</h2>
 <ul>
   <li>Python 3.12+</li>
@@ -80,7 +80,7 @@
   <li><a target="_blank" href="https://docs.astral.sh/uv/">uv</a> (optional but recommended)</li>
 </ul>
 <h2>Running the Game (Source)</h2>
-<pre style="background: #222; color: #eee; padding: 12px; border-radius: 5px; overflow-x: auto;"><code>git clone --recurse-submodules https://github.com/umutcanekinci/artifical-chaos.git
+<pre style="background: #222; color: #eee; padding: 12px; border-radius: 5px; overflow-x: auto;"><code>git clone --recurse-submodules https://github.com/vectorviolet/artifical-chaos.git
 cd artifical-chaos
 uv sync
 uv run python __main__.py</code></pre>
@@ -99,7 +99,7 @@ src/gameplay/effects.py Cosmetic combat VFX (muzzle flash, tracer, explosions, s
 src/util/constants.py   Tuning constants (stats, ranges, cooldowns, rank bonuses)
 src/pygamine/        Shared engine (git submodule)
 assets/                 Images (soldiers, robots, effects, UI), tileset + Tiled map</code></pre>
-<p>See <a target="_blank" href="https://github.com/umutcanekinci/artifical-chaos/blob/main/CLAUDE.md">CLAUDE.md</a> for the full architecture overview and <a target="_blank" href="https://github.com/umutcanekinci/artifical-chaos/blob/main/GDD.md">GDD.md</a> for the full story/design doc.</p>
+<p>See <a target="_blank" href="https://github.com/vectorviolet/artifical-chaos/blob/main/CLAUDE.md">CLAUDE.md</a> for the full architecture overview and <a target="_blank" href="https://github.com/vectorviolet/artifical-chaos/blob/main/GDD.md">GDD.md</a> for the full story/design doc.</p>
 <h2>Credits</h2>
 <p>Art from <a target="_blank" href="https://mattwalkden.itch.io/">mattwalkden</a>'s Free Robot Warfare Pack &mdash; released into the public domain under <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>. A written credit is not required but appreciated.</p>
 <h2>Contributing</h2>
@@ -111,5 +111,5 @@ assets/                 Images (soldiers, robots, effects, UI), tileset + Tiled 
   <li>Open a pull request.</li>
 </ol>
 <h2>Author & License</h2>
-<p>Created by Umutcan Ekinci &mdash; <a href="mailto:umutcannekinci@gmail.com">umutcannekinci@gmail.com</a>. See also the <a target="_blank" href="https://github.com/umutcanekinci/artifical-chaos/contributors">contributors</a>.</p>
-<p>Distributed under the MIT License. See <a target="_blank" href="https://github.com/umutcanekinci/artifical-chaos/blob/main/LICENSE">LICENSE</a> for details.</p>
+<p>Created by Umutcan Ekinci &mdash; <a href="mailto:umutcannekinci@gmail.com">umutcannekinci@gmail.com</a>. See also the <a target="_blank" href="https://github.com/vectorviolet/artifical-chaos/contributors">contributors</a>.</p>
+<p>Distributed under the MIT License. See <a target="_blank" href="https://github.com/vectorviolet/artifical-chaos/blob/main/LICENSE">LICENSE</a> for details.</p>
