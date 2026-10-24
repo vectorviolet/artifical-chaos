@@ -48,12 +48,6 @@ MAX_DELTA_TIME = 1 / 20
 MUZZLE_OFFSET_X = 24
 MUZZLE_OFFSET_Y = -6
 
-# Startup splash (pygamine.SplashScreen): fade-in then hold, per image --
-# same values as chokepoint/highrise/hunted/standoff, which all show the
-# same pygame_logo.png this way.
-SPLASH_FADE_MS = 1500
-SPLASH_HOLD_MS = 1000
-
 # In-game controls tutorial (gameplay/tutorial.py) -- a linear "press this
 # key" HUD overlay shown at the start of a run (MOVE -> FIRE -> SQUAD
 # STANCE), not persisted across runs (no save/load exists yet, see

@@ -23,6 +23,9 @@ ROOT = Path(SPECPATH)  # noqa: F821 — injected by PyInstaller
 # folder in this project -- see CLAUDE.md's "plain constants" note).
 datas = [
     (str(ROOT / "assets"), "assets"),
+    # pygamine's shared splash (standard_splash_media), resolved next to the
+    # pygamine package rather than the game's assets/
+    (str(ROOT / "src" / "pygamine" / "pygamine" / "branding"), "pygamine/branding"),
 ]
 
 # Optional per-OS application icon. This project has no logo asset yet
