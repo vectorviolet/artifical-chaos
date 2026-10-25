@@ -13,13 +13,13 @@ Thank you to everyone who makes their work freely available.
 | Pack | Author | License | Used for | Files |
 |---|---|---|---|---|
 | [Input Prompts](https://kenney.nl/assets/input-prompts) | Kenney | [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) | keyboard and mouse prompts | 257 |
-| [Free Robot Warfare Pack](https://mattwalkden.itch.io/free-robot-warfare-pack) | Matt Walkden | [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) | soldiers, robots, effects, projectiles, tileset, UI | 46 |
+| [Free Robot Warfare Pack](https://mattwalkden.itch.io/free-robot-warfare-pack) | Matt Walkden | [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) | soldiers, robots, effects, projectiles, tileset, UI | 49 |
 | [PT Sans Narrow (font)](https://fonts.google.com/specimen/PT+Sans+Narrow) | ParaType | [SIL Open Font License 1.1](https://openfontlicense.org) | fonts | 3 |
 
 Made for this game by its developer: tiledmap.tmx (in assets/images/tileset).
 
 Not yet verified (origin or license still to be confirmed; see `todo` in
-SOURCES.yaml): title.png, objective-flag.png, objective-pulse.png, selection-circles.png.
+SOURCES.yaml): title.png.
 
 CC0 assets need no attribution; they are credited here anyway. Each pack's own
 license text ships with the game: `licenses/assets/kenney-input-prompts.txt`, `licenses/assets/mattwalkden-robot-warfare.txt`, `licenses/assets/paratype-pt-sans-narrow.txt`.

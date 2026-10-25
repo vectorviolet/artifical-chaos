@@ -958,11 +958,13 @@ files:
     original: "numbers.png"
     note: "the pack was not re-downloaded for a byte check; name as shipped, ImageReady signature and the pack's own License.txt/README.txt in assets/"
   "images/ui/objective-flag.png":
-    source: unknown
-    todo: "arrived with the Robot Warfare pack's UI folder in the first commit, but lacks the pack's Adobe ImageReady signature; not confirmed against the pack. Re-download the pack and compare, or replace it."
+    source: mattwalkden-robot-warfare
+    original: "Robot Warfare Asset Pack 22-11-24/UI/objective-flag.png"
+    note: "byte-identical to the file in the pack zip (Robot Warfare Asset Pack 24-11-21.zip)"
   "images/ui/objective-pulse.png":
-    source: unknown
-    todo: "arrived with the Robot Warfare pack's UI folder in the first commit, but lacks the pack's Adobe ImageReady signature; not confirmed against the pack. Re-download the pack and compare, or replace it."
+    source: mattwalkden-robot-warfare
+    original: "Robot Warfare Asset Pack 22-11-24/UI/objective-pulse.png"
+    note: "byte-identical to the file in the pack zip (Robot Warfare Asset Pack 24-11-21.zip)"
   "images/ui/overhead-health-bars.png":
     source: mattwalkden-robot-warfare
     original: "overhead-health-bars.png"
@@ -976,8 +978,9 @@ files:
     original: "range-grid.png"
     note: "the pack was not re-downloaded for a byte check; name as shipped, ImageReady signature and the pack's own License.txt/README.txt in assets/"
   "images/ui/selection-circles.png":
-    source: unknown
-    todo: "arrived with the Robot Warfare pack's UI folder in the first commit, but lacks the pack's Adobe ImageReady signature; not confirmed against the pack. Re-download the pack and compare, or replace it."
+    source: mattwalkden-robot-warfare
+    original: "Robot Warfare Asset Pack 22-11-24/UI/selection-circles.png"
+    note: "byte-identical to the file in the pack zip (Robot Warfare Asset Pack 24-11-21.zip)"
   "images/ui/selection-cursor.png":
     source: mattwalkden-robot-warfare
     original: "selection-cursor.png"
