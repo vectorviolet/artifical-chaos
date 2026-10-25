@@ -451,7 +451,7 @@ frame size confirmed first (they bleed past a naive 16px grid slice).
     title art) before the game loop starts (see CLAUDE.md's Entry point
     section), and a linear MOVE → FIRE → SQUAD STANCE onboarding overlay
     (`gameplay/tutorial.py`) plays out over a run's first few seconds
-    using Kenney's CC0 input-prompts icons (see ASSETS.md) — MOVE shows
+    using Kenney's CC0 input-prompts icons (see CREDITS.md) — MOVE shows
     both a WASD and an arrow-key cluster (physical keyboard cross layout,
     same code for both) joined by "OR", since either works. The tmx's map
     center never had a real design reason behind it — the player just

@@ -69,7 +69,32 @@ assets/                   Images (soldiers, robots, UI), tileset + Tiled map
 
 ## Credits
 
-Art from [mattwalkden](https://mattwalkden.itch.io/) — released into the public domain under [CC0](https://creativecommons.org/publicdomain/zero/1.0/). A written credit is not required but appreciated.
+Art from [mattwalkden](https://mattwalkden.itch.io/) — released into the public domain under [CC0](https://creativecommons.org/publicdomain/zero/1.0/). A written credit is not required but appreciated. See [CREDITS.md](CREDITS.md) for every asset pack and library with its license; it also ships with the game.
+
+## Asset sources
+
+Every file under `assets/` is listed in `assets/SOURCES.yaml` with its source:
+
+- **A pack**, given by its slug (for example `kenney-ui-pack`). The entry also gives the file's
+  path inside that pack as `original`. Images built from several pack files list them under
+  `composited_from` instead. Edited pack files say what changed under `modified`.
+- **`own`**, for files made for this game.
+- **`unknown`**, for files whose origin or license isn't confirmed yet. Each needs a `todo` that
+  says what to do; the credits list them as "not yet verified".
+
+The `packs` section names each pack, its author, URL, license and what the game uses it for.
+Each pack's own license text is in `licenses/assets/<slug>.txt`, and every build ships it.
+
+When you add, replace or remove an asset:
+
+1. Update `assets/SOURCES.yaml`, and add `licenses/assets/<slug>.txt` for any new pack.
+2. Run `uv run python scripts/gen_credits.py` to regenerate CREDITS.md's asset section. Don't
+   edit that section by hand.
+3. Run the tests. `tests/test_sources.py` fails if a file is missing from `SOURCES.yaml`, if a
+   listed file doesn't exist, if a pack has no license text, or if CREDITS.md is out of date.
+
+Only ship assets whose license allows bundling them in a distributed game; resolve every
+`unknown` entry before the next release.
 
 ## Contributing
 

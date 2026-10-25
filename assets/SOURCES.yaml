@@ -1,0 +1,1012 @@
+# Where every file under assets/ comes from -- see README.md ("Asset sources").
+# tests/test_sources.py keeps this complete, and scripts/gen_credits.py builds
+# CREDITS.md's asset section from it. A pack's license text is in
+# licenses/assets/<pack>.txt.
+#
+# source: a pack slug from `packs`, "own" (made for this game), or "unknown"
+#         (origin not yet confirmed; then `todo` says what to do).
+# original: the file's path inside that pack. modified: what was changed.
+
+packs:
+  kenney-input-prompts:
+    name: "Input Prompts"
+    author: "Kenney"
+    url: https://kenney.nl/assets/input-prompts
+    license: CC0-1.0
+    used_for: "keyboard and mouse prompts"
+  mattwalkden-robot-warfare:
+    name: "Free Robot Warfare Pack"
+    author: "Matt Walkden"
+    url: https://mattwalkden.itch.io/free-robot-warfare-pack
+    license: CC0-1.0
+    used_for: "soldiers, robots, effects, projectiles, tileset, UI"
+  paratype-pt-sans-narrow:
+    name: "PT Sans Narrow (font)"
+    author: "ParaType"
+    url: https://fonts.google.com/specimen/PT+Sans+Narrow
+    license: OFL-1.1
+    used_for: "fonts"
+
+files:
+  "fonts/OFL-PTSansNarrow.txt":
+    source: paratype-pt-sans-narrow
+    original: "ofl/ptsansnarrow/OFL.txt"
+    modified: "same license text, different formatting"
+  "fonts/PTSansNarrow-Bold.ttf":
+    source: paratype-pt-sans-narrow
+    original: "ofl/ptsansnarrow/PT_Sans-Narrow-Web-Bold.ttf"
+    note: "byte-identical to google/fonts"
+  "fonts/PTSansNarrow-Regular.ttf":
+    source: paratype-pt-sans-narrow
+    original: "ofl/ptsansnarrow/PT_Sans-Narrow-Web-Regular.ttf"
+    note: "byte-identical to google/fonts"
+  "images/branding/title.png":
+    source: unknown
+    todo: "AI-generated key art (commit 7e47d27); the image tool's watermark was cropped off. Which tool made it and its terms are not recorded. Confirm the tool's terms allow this use, or replace it."
+  "images/effects/big-explosion.png":
+    source: mattwalkden-robot-warfare
+    original: "big-explosion.png"
+    note: "the pack was not re-downloaded for a byte check; name as shipped, ImageReady signature and the pack's own License.txt/README.txt in assets/"
+  "images/effects/big-fragments.png":
+    source: mattwalkden-robot-warfare
+    original: "big-fragments.png"
+    note: "the pack was not re-downloaded for a byte check; name as shipped, ImageReady signature and the pack's own License.txt/README.txt in assets/"
+  "images/effects/bullet-impacts.png":
+    source: mattwalkden-robot-warfare
+    original: "bullet-impacts.png"
+    note: "the pack was not re-downloaded for a byte check; name as shipped, ImageReady signature and the pack's own License.txt/README.txt in assets/"
+  "images/effects/hit-sparks.png":
+    source: mattwalkden-robot-warfare
+    original: "hit-sparks.png"
+    note: "the pack was not re-downloaded for a byte check; name as shipped, ImageReady signature and the pack's own License.txt/README.txt in assets/"
+  "images/effects/hit-spatters.png":
+    source: mattwalkden-robot-warfare
+    original: "hit-spatters.png"
+    note: "the pack was not re-downloaded for a byte check; name as shipped, ImageReady signature and the pack's own License.txt/README.txt in assets/"
+  "images/effects/laser-flash.png":
+    source: mattwalkden-robot-warfare
+    original: "laser-flash.png"
+    note: "the pack was not re-downloaded for a byte check; name as shipped, ImageReady signature and the pack's own License.txt/README.txt in assets/"
+  "images/effects/muzzle-flashes.png":
+    source: mattwalkden-robot-warfare
+    original: "muzzle-flashes.png"
+    note: "the pack was not re-downloaded for a byte check; name as shipped, ImageReady signature and the pack's own License.txt/README.txt in assets/"
+  "images/effects/small-explosion.png":
+    source: mattwalkden-robot-warfare
+    original: "small-explosion.png"
+    note: "the pack was not re-downloaded for a byte check; name as shipped, ImageReady signature and the pack's own License.txt/README.txt in assets/"
+  "images/effects/small-fragments.png":
+    source: mattwalkden-robot-warfare
+    original: "small-fragments.png"
+    note: "the pack was not re-downloaded for a byte check; name as shipped, ImageReady signature and the pack's own License.txt/README.txt in assets/"
+  "images/effects/smoke.png":
+    source: mattwalkden-robot-warfare
+    original: "smoke.png"
+    note: "the pack was not re-downloaded for a byte check; name as shipped, ImageReady signature and the pack's own License.txt/README.txt in assets/"
+  "images/input_prompts/keyboard.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard.png"
+  "images/input_prompts/keyboard_0.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_0.png"
+  "images/input_prompts/keyboard_0_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_0_outline.png"
+  "images/input_prompts/keyboard_1.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_1.png"
+  "images/input_prompts/keyboard_1_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_1_outline.png"
+  "images/input_prompts/keyboard_2.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_2.png"
+  "images/input_prompts/keyboard_2_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_2_outline.png"
+  "images/input_prompts/keyboard_3.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_3.png"
+  "images/input_prompts/keyboard_3_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_3_outline.png"
+  "images/input_prompts/keyboard_4.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_4.png"
+  "images/input_prompts/keyboard_4_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_4_outline.png"
+  "images/input_prompts/keyboard_5.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_5.png"
+  "images/input_prompts/keyboard_5_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_5_outline.png"
+  "images/input_prompts/keyboard_6.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_6.png"
+  "images/input_prompts/keyboard_6_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_6_outline.png"
+  "images/input_prompts/keyboard_7.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_7.png"
+  "images/input_prompts/keyboard_7_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_7_outline.png"
+  "images/input_prompts/keyboard_8.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_8.png"
+  "images/input_prompts/keyboard_8_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_8_outline.png"
+  "images/input_prompts/keyboard_9.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_9.png"
+  "images/input_prompts/keyboard_9_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_9_outline.png"
+  "images/input_prompts/keyboard_a.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_a.png"
+  "images/input_prompts/keyboard_a_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_a_outline.png"
+  "images/input_prompts/keyboard_alt.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_alt.png"
+  "images/input_prompts/keyboard_alt_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_alt_outline.png"
+  "images/input_prompts/keyboard_any.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_any.png"
+  "images/input_prompts/keyboard_any_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_any_outline.png"
+  "images/input_prompts/keyboard_apostrophe.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_apostrophe.png"
+  "images/input_prompts/keyboard_apostrophe_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_apostrophe_outline.png"
+  "images/input_prompts/keyboard_arrow_down.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_arrow_down.png"
+  "images/input_prompts/keyboard_arrow_down_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_arrow_down_outline.png"
+  "images/input_prompts/keyboard_arrow_left.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_arrow_left.png"
+  "images/input_prompts/keyboard_arrow_left_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_arrow_left_outline.png"
+  "images/input_prompts/keyboard_arrow_right.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_arrow_right.png"
+  "images/input_prompts/keyboard_arrow_right_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_arrow_right_outline.png"
+  "images/input_prompts/keyboard_arrow_up.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_arrow_up.png"
+  "images/input_prompts/keyboard_arrow_up_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_arrow_up_outline.png"
+  "images/input_prompts/keyboard_arrows.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_arrows.png"
+  "images/input_prompts/keyboard_arrows_all.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_arrows_all.png"
+  "images/input_prompts/keyboard_arrows_down.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_arrows_down.png"
+  "images/input_prompts/keyboard_arrows_down_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_arrows_down_outline.png"
+  "images/input_prompts/keyboard_arrows_horizontal.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_arrows_horizontal.png"
+  "images/input_prompts/keyboard_arrows_horizontal_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_arrows_horizontal_outline.png"
+  "images/input_prompts/keyboard_arrows_left.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_arrows_left.png"
+  "images/input_prompts/keyboard_arrows_left_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_arrows_left_outline.png"
+  "images/input_prompts/keyboard_arrows_none.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_arrows_none.png"
+  "images/input_prompts/keyboard_arrows_right.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_arrows_right.png"
+  "images/input_prompts/keyboard_arrows_right_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_arrows_right_outline.png"
+  "images/input_prompts/keyboard_arrows_up.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_arrows_up.png"
+  "images/input_prompts/keyboard_arrows_up_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_arrows_up_outline.png"
+  "images/input_prompts/keyboard_arrows_vertical.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_arrows_vertical.png"
+  "images/input_prompts/keyboard_arrows_vertical_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_arrows_vertical_outline.png"
+  "images/input_prompts/keyboard_asterisk.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_asterisk.png"
+  "images/input_prompts/keyboard_asterisk_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_asterisk_outline.png"
+  "images/input_prompts/keyboard_b.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_b.png"
+  "images/input_prompts/keyboard_b_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_b_outline.png"
+  "images/input_prompts/keyboard_backspace.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_backspace.png"
+  "images/input_prompts/keyboard_backspace_icon.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_backspace_icon.png"
+  "images/input_prompts/keyboard_backspace_icon_alternative.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_backspace_icon_alternative.png"
+  "images/input_prompts/keyboard_backspace_icon_alternative_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_backspace_icon_alternative_outline.png"
+  "images/input_prompts/keyboard_backspace_icon_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_backspace_icon_outline.png"
+  "images/input_prompts/keyboard_backspace_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_backspace_outline.png"
+  "images/input_prompts/keyboard_bracket_close.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_bracket_close.png"
+  "images/input_prompts/keyboard_bracket_close_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_bracket_close_outline.png"
+  "images/input_prompts/keyboard_bracket_greater.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_bracket_greater.png"
+  "images/input_prompts/keyboard_bracket_greater_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_bracket_greater_outline.png"
+  "images/input_prompts/keyboard_bracket_less.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_bracket_less.png"
+  "images/input_prompts/keyboard_bracket_less_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_bracket_less_outline.png"
+  "images/input_prompts/keyboard_bracket_open.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_bracket_open.png"
+  "images/input_prompts/keyboard_bracket_open_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_bracket_open_outline.png"
+  "images/input_prompts/keyboard_c.png":
+    source: kenney-input-prompts
+    original: "Nintendo Switch 2/Default/switch_button_c.png"
+  "images/input_prompts/keyboard_c_outline.png":
+    source: kenney-input-prompts
+    original: "Nintendo Switch 2/Default/switch_button_c_outline.png"
+  "images/input_prompts/keyboard_capslock.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_capslock.png"
+  "images/input_prompts/keyboard_capslock_icon.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_capslock_icon.png"
+  "images/input_prompts/keyboard_capslock_icon_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_capslock_icon_outline.png"
+  "images/input_prompts/keyboard_capslock_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_capslock_outline.png"
+  "images/input_prompts/keyboard_caret.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_caret.png"
+  "images/input_prompts/keyboard_caret_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_caret_outline.png"
+  "images/input_prompts/keyboard_colon.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_colon.png"
+  "images/input_prompts/keyboard_colon_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_colon_outline.png"
+  "images/input_prompts/keyboard_comma.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_comma.png"
+  "images/input_prompts/keyboard_comma_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_comma_outline.png"
+  "images/input_prompts/keyboard_command.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_command.png"
+  "images/input_prompts/keyboard_command_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_command_outline.png"
+  "images/input_prompts/keyboard_ctrl.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_ctrl.png"
+  "images/input_prompts/keyboard_ctrl_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_ctrl_outline.png"
+  "images/input_prompts/keyboard_d.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_d.png"
+  "images/input_prompts/keyboard_d_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_d_outline.png"
+  "images/input_prompts/keyboard_delete.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_delete.png"
+  "images/input_prompts/keyboard_delete_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_delete_outline.png"
+  "images/input_prompts/keyboard_e.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_e.png"
+  "images/input_prompts/keyboard_e_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_e_outline.png"
+  "images/input_prompts/keyboard_end.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_end.png"
+  "images/input_prompts/keyboard_end_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_end_outline.png"
+  "images/input_prompts/keyboard_enter.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_enter.png"
+  "images/input_prompts/keyboard_enter_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_enter_outline.png"
+  "images/input_prompts/keyboard_equals.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_equals.png"
+  "images/input_prompts/keyboard_equals_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_equals_outline.png"
+  "images/input_prompts/keyboard_escape.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_escape.png"
+  "images/input_prompts/keyboard_escape_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_escape_outline.png"
+  "images/input_prompts/keyboard_exclamation.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_exclamation.png"
+  "images/input_prompts/keyboard_exclamation_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_exclamation_outline.png"
+  "images/input_prompts/keyboard_f.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_f.png"
+  "images/input_prompts/keyboard_f1.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_f1.png"
+  "images/input_prompts/keyboard_f10.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_f10.png"
+  "images/input_prompts/keyboard_f10_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_f10_outline.png"
+  "images/input_prompts/keyboard_f11.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_f11.png"
+  "images/input_prompts/keyboard_f11_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_f11_outline.png"
+  "images/input_prompts/keyboard_f12.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_f12.png"
+  "images/input_prompts/keyboard_f12_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_f12_outline.png"
+  "images/input_prompts/keyboard_f1_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_f1_outline.png"
+  "images/input_prompts/keyboard_f2.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_f2.png"
+  "images/input_prompts/keyboard_f2_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_f2_outline.png"
+  "images/input_prompts/keyboard_f3.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_f3.png"
+  "images/input_prompts/keyboard_f3_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_f3_outline.png"
+  "images/input_prompts/keyboard_f4.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_f4.png"
+  "images/input_prompts/keyboard_f4_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_f4_outline.png"
+  "images/input_prompts/keyboard_f5.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_f5.png"
+  "images/input_prompts/keyboard_f5_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_f5_outline.png"
+  "images/input_prompts/keyboard_f6.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_f6.png"
+  "images/input_prompts/keyboard_f6_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_f6_outline.png"
+  "images/input_prompts/keyboard_f7.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_f7.png"
+  "images/input_prompts/keyboard_f7_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_f7_outline.png"
+  "images/input_prompts/keyboard_f8.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_f8.png"
+  "images/input_prompts/keyboard_f8_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_f8_outline.png"
+  "images/input_prompts/keyboard_f9.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_f9.png"
+  "images/input_prompts/keyboard_f9_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_f9_outline.png"
+  "images/input_prompts/keyboard_f_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_f_outline.png"
+  "images/input_prompts/keyboard_function.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_function.png"
+  "images/input_prompts/keyboard_function_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_function_outline.png"
+  "images/input_prompts/keyboard_g.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_g.png"
+  "images/input_prompts/keyboard_g_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_g_outline.png"
+  "images/input_prompts/keyboard_h.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_h.png"
+  "images/input_prompts/keyboard_h_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_h_outline.png"
+  "images/input_prompts/keyboard_home.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_home.png"
+  "images/input_prompts/keyboard_home_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_home_outline.png"
+  "images/input_prompts/keyboard_i.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_i.png"
+  "images/input_prompts/keyboard_i_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_i_outline.png"
+  "images/input_prompts/keyboard_insert.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_insert.png"
+  "images/input_prompts/keyboard_insert_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_insert_outline.png"
+  "images/input_prompts/keyboard_j.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_j.png"
+  "images/input_prompts/keyboard_j_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_j_outline.png"
+  "images/input_prompts/keyboard_k.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_k.png"
+  "images/input_prompts/keyboard_k_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_k_outline.png"
+  "images/input_prompts/keyboard_l.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_l.png"
+  "images/input_prompts/keyboard_l_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_l_outline.png"
+  "images/input_prompts/keyboard_m.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_m.png"
+  "images/input_prompts/keyboard_m_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_m_outline.png"
+  "images/input_prompts/keyboard_minus.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_minus.png"
+  "images/input_prompts/keyboard_minus_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_minus_outline.png"
+  "images/input_prompts/keyboard_n.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_n.png"
+  "images/input_prompts/keyboard_n_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_n_outline.png"
+  "images/input_prompts/keyboard_numlock.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_numlock.png"
+  "images/input_prompts/keyboard_numlock_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_numlock_outline.png"
+  "images/input_prompts/keyboard_numpad_enter.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_numpad_enter.png"
+  "images/input_prompts/keyboard_numpad_enter_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_numpad_enter_outline.png"
+  "images/input_prompts/keyboard_numpad_plus.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_numpad_plus.png"
+  "images/input_prompts/keyboard_numpad_plus_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_numpad_plus_outline.png"
+  "images/input_prompts/keyboard_o.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_o.png"
+  "images/input_prompts/keyboard_o_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_o_outline.png"
+  "images/input_prompts/keyboard_option.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_option.png"
+  "images/input_prompts/keyboard_option_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_option_outline.png"
+  "images/input_prompts/keyboard_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_outline.png"
+  "images/input_prompts/keyboard_p.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_p.png"
+  "images/input_prompts/keyboard_p_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_p_outline.png"
+  "images/input_prompts/keyboard_page_down.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_page_down.png"
+  "images/input_prompts/keyboard_page_down_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_page_down_outline.png"
+  "images/input_prompts/keyboard_page_up.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_page_up.png"
+  "images/input_prompts/keyboard_page_up_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_page_up_outline.png"
+  "images/input_prompts/keyboard_pause.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_pause.png"
+  "images/input_prompts/keyboard_pause_break.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_pause_break.png"
+  "images/input_prompts/keyboard_pause_break_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_pause_break_outline.png"
+  "images/input_prompts/keyboard_pause_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_pause_outline.png"
+  "images/input_prompts/keyboard_period.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_period.png"
+  "images/input_prompts/keyboard_period_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_period_outline.png"
+  "images/input_prompts/keyboard_plus.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_plus.png"
+  "images/input_prompts/keyboard_plus_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_plus_outline.png"
+  "images/input_prompts/keyboard_printscreen.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_printscreen.png"
+  "images/input_prompts/keyboard_printscreen_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_printscreen_outline.png"
+  "images/input_prompts/keyboard_q.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_q.png"
+  "images/input_prompts/keyboard_q_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_q_outline.png"
+  "images/input_prompts/keyboard_question.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_question.png"
+  "images/input_prompts/keyboard_question_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_question_outline.png"
+  "images/input_prompts/keyboard_quote.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_quote.png"
+  "images/input_prompts/keyboard_quote_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_quote_outline.png"
+  "images/input_prompts/keyboard_r.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_r.png"
+  "images/input_prompts/keyboard_r_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_r_outline.png"
+  "images/input_prompts/keyboard_return.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_return.png"
+  "images/input_prompts/keyboard_return_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_return_outline.png"
+  "images/input_prompts/keyboard_s.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_s.png"
+  "images/input_prompts/keyboard_s_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_s_outline.png"
+  "images/input_prompts/keyboard_scroll_lock.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_scroll_lock.png"
+  "images/input_prompts/keyboard_scroll_lock_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_scroll_lock_outline.png"
+  "images/input_prompts/keyboard_semicolon.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_semicolon.png"
+  "images/input_prompts/keyboard_semicolon_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_semicolon_outline.png"
+  "images/input_prompts/keyboard_shift.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_shift.png"
+  "images/input_prompts/keyboard_shift_icon.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_shift_icon.png"
+  "images/input_prompts/keyboard_shift_icon_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_shift_icon_outline.png"
+  "images/input_prompts/keyboard_shift_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_shift_outline.png"
+  "images/input_prompts/keyboard_slash_back.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_slash_back.png"
+  "images/input_prompts/keyboard_slash_back_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_slash_back_outline.png"
+  "images/input_prompts/keyboard_slash_forward.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_slash_forward.png"
+  "images/input_prompts/keyboard_slash_forward_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_slash_forward_outline.png"
+  "images/input_prompts/keyboard_space.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_space.png"
+  "images/input_prompts/keyboard_space_icon.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_space_icon.png"
+  "images/input_prompts/keyboard_space_icon_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_space_icon_outline.png"
+  "images/input_prompts/keyboard_space_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_space_outline.png"
+  "images/input_prompts/keyboard_t.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_t.png"
+  "images/input_prompts/keyboard_t_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_t_outline.png"
+  "images/input_prompts/keyboard_tab.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_tab.png"
+  "images/input_prompts/keyboard_tab_icon.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_tab_icon.png"
+  "images/input_prompts/keyboard_tab_icon_alternative.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_tab_icon_alternative.png"
+  "images/input_prompts/keyboard_tab_icon_alternative_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_tab_icon_alternative_outline.png"
+  "images/input_prompts/keyboard_tab_icon_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_tab_icon_outline.png"
+  "images/input_prompts/keyboard_tab_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_tab_outline.png"
+  "images/input_prompts/keyboard_tilde.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_tilde.png"
+  "images/input_prompts/keyboard_tilde_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_tilde_outline.png"
+  "images/input_prompts/keyboard_u.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_u.png"
+  "images/input_prompts/keyboard_u_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_u_outline.png"
+  "images/input_prompts/keyboard_underscore.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_underscore.png"
+  "images/input_prompts/keyboard_underscore_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_underscore_outline.png"
+  "images/input_prompts/keyboard_v.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_v.png"
+  "images/input_prompts/keyboard_v_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_v_outline.png"
+  "images/input_prompts/keyboard_w.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_w.png"
+  "images/input_prompts/keyboard_w_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_w_outline.png"
+  "images/input_prompts/keyboard_win.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_win.png"
+  "images/input_prompts/keyboard_win_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_win_outline.png"
+  "images/input_prompts/keyboard_x.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_x.png"
+  "images/input_prompts/keyboard_x_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_x_outline.png"
+  "images/input_prompts/keyboard_y.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_y.png"
+  "images/input_prompts/keyboard_y_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_y_outline.png"
+  "images/input_prompts/keyboard_z.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_z.png"
+  "images/input_prompts/keyboard_z_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/keyboard_z_outline.png"
+  "images/input_prompts/mouse.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/mouse.png"
+  "images/input_prompts/mouse_horizontal.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/mouse_horizontal.png"
+  "images/input_prompts/mouse_left.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/mouse_left.png"
+  "images/input_prompts/mouse_left_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/mouse_left_outline.png"
+  "images/input_prompts/mouse_move.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/mouse_move.png"
+  "images/input_prompts/mouse_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/mouse_outline.png"
+  "images/input_prompts/mouse_right.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/mouse_right.png"
+  "images/input_prompts/mouse_right_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/mouse_right_outline.png"
+  "images/input_prompts/mouse_scroll.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/mouse_scroll.png"
+  "images/input_prompts/mouse_scroll_down.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/mouse_scroll_down.png"
+  "images/input_prompts/mouse_scroll_down_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/mouse_scroll_down_outline.png"
+  "images/input_prompts/mouse_scroll_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/mouse_scroll_outline.png"
+  "images/input_prompts/mouse_scroll_up.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/mouse_scroll_up.png"
+  "images/input_prompts/mouse_scroll_up_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/mouse_scroll_up_outline.png"
+  "images/input_prompts/mouse_scroll_vertical.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/mouse_scroll_vertical.png"
+  "images/input_prompts/mouse_scroll_vertical_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/mouse_scroll_vertical_outline.png"
+  "images/input_prompts/mouse_side.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/mouse_side.png"
+  "images/input_prompts/mouse_side_back.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/mouse_side_back.png"
+  "images/input_prompts/mouse_side_back_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/mouse_side_back_outline.png"
+  "images/input_prompts/mouse_side_forward.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/mouse_side_forward.png"
+  "images/input_prompts/mouse_side_forward_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/mouse_side_forward_outline.png"
+  "images/input_prompts/mouse_side_outline.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/mouse_side_outline.png"
+  "images/input_prompts/mouse_small.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/mouse_small.png"
+  "images/input_prompts/mouse_vertical.png":
+    source: kenney-input-prompts
+    original: "Keyboard & Mouse/Default/mouse_vertical.png"
+  "images/obstacles_and_objects/obstacles-and-objects.png":
+    source: mattwalkden-robot-warfare
+    original: "obstacles-and-objects.png"
+    note: "the pack was not re-downloaded for a byte check; name as shipped, ImageReady signature and the pack's own License.txt/README.txt in assets/"
+  "images/projectiles/bullets+plasma.png":
+    source: mattwalkden-robot-warfare
+    original: "bullets+plasma.png"
+    note: "the pack was not re-downloaded for a byte check; name as shipped, ImageReady signature and the pack's own License.txt/README.txt in assets/"
+  "images/projectiles/Grenade.png":
+    source: mattwalkden-robot-warfare
+    original: "Grenade.png"
+    note: "the pack was not re-downloaded for a byte check; name as shipped, ImageReady signature and the pack's own License.txt/README.txt in assets/"
+  "images/projectiles/RPG-round.png":
+    source: mattwalkden-robot-warfare
+    original: "RPG-round.png"
+    note: "the pack was not re-downloaded for a byte check; name as shipped, ImageReady signature and the pack's own License.txt/README.txt in assets/"
+  "images/robots/Centipede.png":
+    source: mattwalkden-robot-warfare
+    original: "Centipede.png"
+    note: "the pack was not re-downloaded for a byte check; name as shipped, ImageReady signature and the pack's own License.txt/README.txt in assets/"
+  "images/robots/Hornet.png":
+    source: mattwalkden-robot-warfare
+    original: "Hornet.png"
+    note: "the pack was not re-downloaded for a byte check; name as shipped, ImageReady signature and the pack's own License.txt/README.txt in assets/"
+  "images/robots/Robot animation info.txt":
+    source: mattwalkden-robot-warfare
+    original: "Robot animation info.txt"
+    note: "the pack was not re-downloaded for a byte check; name as shipped, ImageReady signature and the pack's own License.txt/README.txt in assets/"
+  "images/robots/Scarab.png":
+    source: mattwalkden-robot-warfare
+    original: "Scarab.png"
+    note: "the pack was not re-downloaded for a byte check; name as shipped, ImageReady signature and the pack's own License.txt/README.txt in assets/"
+  "images/robots/Spider.png":
+    source: mattwalkden-robot-warfare
+    original: "Spider.png"
+    note: "the pack was not re-downloaded for a byte check; name as shipped, ImageReady signature and the pack's own License.txt/README.txt in assets/"
+  "images/robots/Wasp.png":
+    source: mattwalkden-robot-warfare
+    original: "Wasp.png"
+    note: "the pack was not re-downloaded for a byte check; name as shipped, ImageReady signature and the pack's own License.txt/README.txt in assets/"
+  "images/soliders/AntiTank-Class.png":
+    source: mattwalkden-robot-warfare
+    original: "AntiTank-Class.png"
+    note: "the pack was not re-downloaded for a byte check; name as shipped, ImageReady signature and the pack's own License.txt/README.txt in assets/"
+  "images/soliders/Assault-Class.png":
+    source: mattwalkden-robot-warfare
+    original: "Assault-Class.png"
+    note: "the pack was not re-downloaded for a byte check; name as shipped, ImageReady signature and the pack's own License.txt/README.txt in assets/"
+  "images/soliders/Grenadier-Class.png":
+    source: mattwalkden-robot-warfare
+    original: "Grenadier-Class.png"
+    note: "the pack was not re-downloaded for a byte check; name as shipped, ImageReady signature and the pack's own License.txt/README.txt in assets/"
+  "images/soliders/MachineGunner-Class.png":
+    source: mattwalkden-robot-warfare
+    original: "MachineGunner-Class.png"
+    note: "the pack was not re-downloaded for a byte check; name as shipped, ImageReady signature and the pack's own License.txt/README.txt in assets/"
+  "images/soliders/RadioOperator-Class.png":
+    source: mattwalkden-robot-warfare
+    original: "RadioOperator-Class.png"
+    note: "the pack was not re-downloaded for a byte check; name as shipped, ImageReady signature and the pack's own License.txt/README.txt in assets/"
+  "images/soliders/Sniper-Class.png":
+    source: mattwalkden-robot-warfare
+    original: "Sniper-Class.png"
+    note: "the pack was not re-downloaded for a byte check; name as shipped, ImageReady signature and the pack's own License.txt/README.txt in assets/"
+  "images/soliders/Soldier Animation Info.txt":
+    source: mattwalkden-robot-warfare
+    original: "Soldier Animation Info.txt"
+    note: "the pack was not re-downloaded for a byte check; name as shipped, ImageReady signature and the pack's own License.txt/README.txt in assets/"
+  "images/soliders/SquadLeader.png":
+    source: mattwalkden-robot-warfare
+    original: "SquadLeader.png"
+    note: "the pack was not re-downloaded for a byte check; name as shipped, ImageReady signature and the pack's own License.txt/README.txt in assets/"
+  "images/tileset/tiledmap.tmx":
+    source: own
+    note: "Tiled map made for this game (uses the pack's tileset)"
+  "images/tileset/tileset_arranged.png":
+    source: mattwalkden-robot-warfare
+    original: "tileset_arranged.png"
+    note: "the pack was not re-downloaded for a byte check; name as shipped, ImageReady signature and the pack's own License.txt/README.txt in assets/"
+  "images/tileset/tileset_compressed.png":
+    source: mattwalkden-robot-warfare
+    original: "tileset_compressed.png"
+    note: "the pack was not re-downloaded for a byte check; name as shipped, ImageReady signature and the pack's own License.txt/README.txt in assets/"
+  "images/ui/dotted-arrows.png":
+    source: mattwalkden-robot-warfare
+    original: "dotted-arrows.png"
+    note: "the pack was not re-downloaded for a byte check; name as shipped, ImageReady signature and the pack's own License.txt/README.txt in assets/"
+  "images/ui/health-bars.png":
+    source: mattwalkden-robot-warfare
+    original: "health-bars.png"
+    note: "the pack was not re-downloaded for a byte check; name as shipped, ImageReady signature and the pack's own License.txt/README.txt in assets/"
+  "images/ui/icon-set.png":
+    source: mattwalkden-robot-warfare
+    original: "icon-set.png"
+    note: "the pack was not re-downloaded for a byte check; name as shipped, ImageReady signature and the pack's own License.txt/README.txt in assets/"
+  "images/ui/mouse-pointer.png":
+    source: mattwalkden-robot-warfare
+    original: "mouse-pointer.png"
+    note: "the pack was not re-downloaded for a byte check; name as shipped, ImageReady signature and the pack's own License.txt/README.txt in assets/"
+  "images/ui/numbers.png":
+    source: mattwalkden-robot-warfare
+    original: "numbers.png"
+    note: "the pack was not re-downloaded for a byte check; name as shipped, ImageReady signature and the pack's own License.txt/README.txt in assets/"
+  "images/ui/objective-flag.png":
+    source: unknown
+    todo: "arrived with the Robot Warfare pack's UI folder in the first commit, but lacks the pack's Adobe ImageReady signature; not confirmed against the pack. Re-download the pack and compare, or replace it."
+  "images/ui/objective-pulse.png":
+    source: unknown
+    todo: "arrived with the Robot Warfare pack's UI folder in the first commit, but lacks the pack's Adobe ImageReady signature; not confirmed against the pack. Re-download the pack and compare, or replace it."
+  "images/ui/overhead-health-bars.png":
+    source: mattwalkden-robot-warfare
+    original: "overhead-health-bars.png"
+    note: "the pack was not re-downloaded for a byte check; name as shipped, ImageReady signature and the pack's own License.txt/README.txt in assets/"
+  "images/ui/panel-frames.png":
+    source: mattwalkden-robot-warfare
+    original: "panel-frames.png"
+    note: "the pack was not re-downloaded for a byte check; name as shipped, ImageReady signature and the pack's own License.txt/README.txt in assets/"
+  "images/ui/range-grid.png":
+    source: mattwalkden-robot-warfare
+    original: "range-grid.png"
+    note: "the pack was not re-downloaded for a byte check; name as shipped, ImageReady signature and the pack's own License.txt/README.txt in assets/"
+  "images/ui/selection-circles.png":
+    source: unknown
+    todo: "arrived with the Robot Warfare pack's UI folder in the first commit, but lacks the pack's Adobe ImageReady signature; not confirmed against the pack. Re-download the pack and compare, or replace it."
+  "images/ui/selection-cursor.png":
+    source: mattwalkden-robot-warfare
+    original: "selection-cursor.png"
+    note: "the pack was not re-downloaded for a byte check; name as shipped, ImageReady signature and the pack's own License.txt/README.txt in assets/"
+  "images/ui/solid-arrows-thick.png":
+    source: mattwalkden-robot-warfare
+    original: "solid-arrows-thick.png"
+    note: "the pack was not re-downloaded for a byte check; name as shipped, ImageReady signature and the pack's own License.txt/README.txt in assets/"
+  "images/ui/solid-arrows-thin.png":
+    source: mattwalkden-robot-warfare
+    original: "solid-arrows-thin.png"
+    note: "the pack was not re-downloaded for a byte check; name as shipped, ImageReady signature and the pack's own License.txt/README.txt in assets/"
+  "images/ui/squad-insignia.png":
+    source: mattwalkden-robot-warfare
+    original: "squad-insignia.png"
+    note: "the pack was not re-downloaded for a byte check; name as shipped, ImageReady signature and the pack's own License.txt/README.txt in assets/"
+  "images/ui/target-cursor.png":
+    source: mattwalkden-robot-warfare
+    original: "target-cursor.png"
+    note: "the pack was not re-downloaded for a byte check; name as shipped, ImageReady signature and the pack's own License.txt/README.txt in assets/"
+  "images/ui/terrain-icons.png":
+    source: mattwalkden-robot-warfare
+    original: "terrain-icons.png"
+    note: "the pack was not re-downloaded for a byte check; name as shipped, ImageReady signature and the pack's own License.txt/README.txt in assets/"
+  "License.txt":
+    source: mattwalkden-robot-warfare
+    original: "License.txt"
+    note: "the pack was not re-downloaded for a byte check; name as shipped, ImageReady signature and the pack's own License.txt/README.txt in assets/"
+  "README.txt":
+    source: mattwalkden-robot-warfare
+    original: "README.txt"
+    note: "the pack was not re-downloaded for a byte check; name as shipped, ImageReady signature and the pack's own License.txt/README.txt in assets/"

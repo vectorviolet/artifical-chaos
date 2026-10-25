@@ -61,7 +61,7 @@ FONT_BOLD = "assets/fonts/PTSansNarrow-Bold.ttf"
 # STANCE), not persisted across runs (no save/load exists yet, see
 # CLAUDE.md's Persistence note) and gone for good the instant every step's
 # been completed once. Icons are Kenney's CC0 input-prompts pack (see
-# ASSETS.md), assets/images/input_prompts/ -- only the "Default" keyboard/
+# CREDITS.md), assets/images/input_prompts/ -- only the "Default" keyboard/
 # mouse style is bundled (no gamepad platforms, no Double/Vector/Fonts
 # variants), since this game has no gamepad support to prompt for.
 TUTORIAL_ICON_SIZE = 48
