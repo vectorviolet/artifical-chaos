@@ -79,6 +79,8 @@ Every file under `assets/` is listed in `assets/SOURCES.yaml` with its source:
   path inside that pack as `original`. Images built from several pack files list them under
   `composited_from` instead. Edited pack files say what changed under `modified`.
 - **`own`**, for files made for this game.
+- **`ai-generated`**, for files made with an AI image tool. Each needs a `note` naming the tool and
+  who generated it; the credits list them under "AI-generated content".
 - **`unknown`**, for files whose origin or license isn't confirmed yet. Each needs a `todo` that
   says what to do; the credits list them as "not yet verified".
 

@@ -59,6 +59,11 @@ def render(data: dict) -> str:
             + ").",
             "",
         ]
+    ai = sorted(rel for rel, entry in files.items() if entry["source"] == "ai-generated")
+    if ai:
+        lines += ["### AI-generated content", ""]
+        lines += [f"- {rel}: {files[rel]['note']}" for rel in ai]
+        lines += [""]
     unknown = sorted(rel for rel, entry in files.items() if entry["source"] == "unknown")
     if unknown:
         lines += [

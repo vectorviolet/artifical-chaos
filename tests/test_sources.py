@@ -46,7 +46,7 @@ def test_every_source_is_a_known_pack_own_or_flagged(sources):
     unknown = {
         e["source"]
         for e in sources["files"].values()
-        if e["source"] not in ("own", "unknown")
+        if e["source"] not in ("own", "ai-generated", "unknown")
     } - set(sources["packs"])
     assert unknown == set()
 
@@ -57,9 +57,15 @@ def test_unknown_files_say_what_to_do(sources):
             assert e.get("todo"), rel
 
 
+def test_ai_generated_files_name_the_tool(sources):
+    for rel, e in sources["files"].items():
+        if e["source"] == "ai-generated":
+            assert e.get("note"), rel
+
+
 def test_every_pack_file_names_its_original(sources):
     for rel, e in sources["files"].items():
-        if e["source"] not in ("own", "unknown"):
+        if e["source"] not in ("own", "ai-generated", "unknown"):
             assert "original" in e or "composited_from" in e, rel
 
 
