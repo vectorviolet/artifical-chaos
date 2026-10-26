@@ -1,5 +1,7 @@
 # Artificial Chaos
 
+> **Status:** feature-frozen, pinned to pygamine v0.24.0. Not actively developed.
+
 ![Coverage](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/vectorviolet/artifical-chaos/main/.github/badges/coverage.json)
 
 Artificial Chaos is a 2D top-down game prototype built with [pygame](https://www.pygame.org/). You control the last human still in control of their own mind, freeing mind-controlled soldiers into a following squad while fighting off autonomous combat drones — see [GDD.md](GDD.md) for the full story/design doc.
